@@ -1,0 +1,84 @@
+/* Weather Page Container */
+.weather-container {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease-in-out;
+}
+
+/* Dynamic background for weather conditions */
+.clear {
+  background-image: url('https://i.postimg.cc/fLw8P1vJ/Screenshot-2024-09-07-151515.png');
+}
+
+.clouds {
+  background-image: url('https://i.postimg.cc/bvBXfQmx/Screenshot-2024-09-07-152422.png');
+}
+
+.rain {
+  background-image: url('https://i.postimg.cc/T1hS1BFp/Screenshot-2024-09-07-151754.png');
+}
+
+.snow {
+  background-image: url('https://i.postimg.cc/BvKWsjkR/Screenshot-2024-09-07-152649.png');
+}
+
+.thunderstorm {
+  background-image: url('https://i.postimg.cc/N0HL088m/Screenshot-2024-09-08-062130.png');
+}
+
+.drizzle {
+  background-image: url('https://i.postimg.cc/52PktL94/Screenshot-2024-09-08-062428.png');
+}
+
+.mist {
+  background-image: url('https://i.postimg.cc/mgxg51Wr/Screenshot-2024-09-08-062631.png');
+}
+
+.haze {
+  background-image: url('https://i.postimg.cc/wBLfQPcv/Screenshot-2024-09-08-062824.png');
+}
+
+/* Temperature and Weather Data */
+.weather-container h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: blueviolet;
+}
+
+.weather-container p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.weather-container .temp {
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .weather-container h2 {
+    font-size: 28px;
+  }
+
+  .weather-container p {
+    font-size: 18px;
+    color: blue;
+  }
+
+  .weather-container .temp {
+    font-size: 34px;
+    color: blue;
+  }
+}

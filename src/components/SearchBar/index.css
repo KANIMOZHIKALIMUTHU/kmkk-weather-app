@@ -1,0 +1,35 @@
+/* Search Bar Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #a9a9a9;
+    font-style: italic;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  input[type="text"]:hover {
+    border-color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    input[type="text"] {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
